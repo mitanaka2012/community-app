@@ -1,0 +1,50 @@
+name: nerima_no_ko
+description: 練馬区の子育てコミュニティアプリ
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # UI & Utils
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.0.4
+  cached_network_image: ^3.3.0
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  
+  # Google Sign In
+  google_sign_in: ^6.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: NotoSansJP
+      fonts:
+        - asset: assets/fonts/NotoSansJP-Regular.ttf
+        - asset: assets/fonts/NotoSansJP-Bold.ttf
+          weight: 700
